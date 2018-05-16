@@ -1,1 +1,6 @@
-sample file
+Git Repository:
+https://github.com/karthik94426/practice.git
+https config:
+$ git config --global http.proxy http://172.26.30.153:8080
+clone git:
+$ git clone https://github.com/karthik94426/DevOps-Practice.git
