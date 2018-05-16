@@ -12,10 +12,6 @@ $ pwd
 /c/Users/syntel.SYNADY1470
 　
 SYNADY1470+syntel@SYNADY1470 MINGW64 ~ (master)
-$ cd C:\Users\syntel.SYNADY1470\DevOps-Practice
-bash: cd: C:Userssyntel.SYNADY1470DevOps-Practice: No such file or directory
-　
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~ (master)
 $ cd DevOps-Practice
 　
 SYNADY1470+syntel@SYNADY1470 MINGW64 ~/DevOps-Practice (master)
