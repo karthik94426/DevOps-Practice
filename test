@@ -7,43 +7,53 @@ $ git clone https://github.com/karthik94426/DevOps-Practice.git
 
 //////////////////////////////
 
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~ (master)
+view the directory structure in git:
+====================================
 $ pwd
 /c/Users/syntel.SYNADY1470
 　
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~ (master)
+Moving to the git project repository:
+=======================================
 $ cd DevOps-Practice
 　
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~/DevOps-Practice (master)
+create file in git:
+==================
 $ cat > file1
 this is first
 　
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~/DevOps-Practice (master)
-$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-　
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-　
-        file1
-　
-nothing added to commit but untracked files present (use "git add" to track)
-　
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~/DevOps-Practice (master)
+Adding particular file in git:
+==============================
 $ git add file1
-warning: LF will be replaced by CRLF in file1.
-The file will have its original line endings in your working directory.
-　
-SYNADY1470+syntel@SYNADY1470 MINGW64 ~/DevOps-Practice (master)
+
+Adding all file in git:
+$git add .
+
+view the status of comitted files:
+====================================
 $ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-　
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-　
-        new file:   file1
-　
-　
+
+///////////////////////
+
+git branch creation:
+=========================
+
 SYNADY1470+syntel@SYNADY1470 MINGW64 ~/DevOps-Practice (master)
+$ git branch branch1
+$ git add .
+$ git commit -m "branch1 commit"
+
+view list of branch :
+===================
+ git branch
+ 
+ Move to the corresponding branch:
+ git checkout branch1
+
+provide global rights for that branch:
+==========================================
+git config --global user.name "karthik94426"
+git config --global user.email karthik_kennedy@syntelinc.com
+
+push file into git:
+==============================
+ git push origin branch1
