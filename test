@@ -57,3 +57,54 @@ git config --global user.email karthik_kennedy@syntelinc.com
 push file into git:
 ==============================
  git push origin branch1
+
+For temporary storage we are using stash:
+================================================
+$ cat>stashsampleFile
+test KKKKKKKKKKKKKKKKKKKKKK
+　
+
+$ git add stashsampleFile
+
+$ ls
+abc.txt  file1  file2  README.md  stashsampleFile  test
+　
+$ git stash
+
+$ ls
+abc.txt  file1  file2  README.md  test
+
+$ git stash pop
+
+$ ls
+abc.txt  file1  file2  README.md  stashsampleFile  test
+　
+$ git commit -m "commiting the stash file"
+
+$ ls
+abc.txt  file1  file2  README.md  stashsampleFile  test
+
+$ git push origin branch1
+
+One more branch created:
+========================================
+$ git branch branch2
+　
+$ git checkout branch2
+Switched to branch 'branch2'
+　
+$ git push origin branch2
+$ cat > f5
+sdfsdfsdfsdfsd
+$ git add .
+$ git commit -m "file saved f5"
+$ git push origin branch2
+$ git checkout branch1
+Switched to branch 'branch1'
+　
+$ git merge branch1 branch2
+
+$ git add .
+　
+$ git push origin branch1
+
